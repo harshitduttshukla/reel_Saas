@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/site";
 import { GUIDES } from "@/lib/guides";
+import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 import { LogoMark } from "./logo";
 
 export function Footer() {
@@ -11,6 +12,9 @@ export function Footer() {
         <nav aria-label="Guides" className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
           {GUIDES.map((g) => (
             <Link key={g.slug} href={`/${g.slug}`} className="text-slate-600 hover:text-slate-900">Reels on {g.device}</Link>
+          ))}
+          {HINGLISH_GUIDES.map((g) => (
+            <Link key={g.slug} href={`/hi/${g.slug}`} className="text-slate-600 hover:text-slate-900">{g.short}</Link>
           ))}
         </nav>
       </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Downloader } from "@/components/downloader";
 import { JsonLd, breadcrumbLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/site";
+import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 
 const TITLE = "Instagram Reel Download Kaise Kare? Free Reel Downloader (2026)";
 const DESC =
@@ -114,6 +115,17 @@ export default function HindiPage() {
               </li>
             ))}
           </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-slate-900">Puri guides padhein</h2>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            {HINGLISH_GUIDES.map((g) => (
+              <Link key={g.slug} href={`/hi/${g.slug}`} className="rounded-2xl bg-white p-5 font-semibold ring-1 ring-slate-200 transition hover:text-brand-600 hover:ring-brand-500">
+                {g.title} →
+              </Link>
+            ))}
+          </div>
         </section>
 
         {SECTIONS.map((s) => (
