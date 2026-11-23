@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: SITE_TITLE, template: `%s | ${SITE_NAME}` },
   description: SITE_DESCRIPTION,
@@ -20,11 +20,12 @@ export const metadata: Metadata = {
   verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
 };
 
-export const viewport: Viewport = { themeColor: "#e1306c", width: "device-width", initialScale: 1 };
+export const rootViewport: Viewport = { themeColor: "#e1306c", width: "device-width", initialScale: 1 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+/** Shared <html>/<body> shell; each route group's root layout sets its own lang. */
+export function RootShell({ lang, children }: { lang: "en" | "hi"; children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body className="min-h-screen flex flex-col antialiased font-sans">
         <Header />
         <main className="flex-1">{children}</main>

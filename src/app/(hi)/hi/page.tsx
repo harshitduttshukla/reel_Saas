@@ -85,7 +85,7 @@ const FAQS = [
 
 export default function HindiPage() {
   return (
-    <div lang="hi">
+    <div>
       <JsonLd
         data={[
           breadcrumbLd([{ name: "Home", url: SITE_URL }, { name: "Reel Download Kaise Kare", url: `${SITE_URL}/hi` }]),

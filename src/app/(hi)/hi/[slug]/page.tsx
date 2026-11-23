@@ -33,7 +33,7 @@ export default async function HinglishGuidePage({ params }: Props) {
   const others = HINGLISH_GUIDES.filter((o) => o.slug !== g.slug);
 
   return (
-    <article lang="hi" className="px-4 py-10">
+    <article className="px-4 py-10">
       <JsonLd
         data={[
           breadcrumbLd([{ name: "Home", url: SITE_URL }, { name: "Reel Download Kaise Kare", url: `${SITE_URL}/hi` }, { name: g.title, url }]),
