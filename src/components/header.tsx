@@ -5,8 +5,9 @@ import { SITE_NAME } from "@/lib/site";
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/#how-to", label: "How to Download" },
+  { href: "/blog", label: "Blog" },
   { href: "/#faq", label: "FAQ" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/hi", label: "हिंदी" },
 ];
 
 export function Header() {

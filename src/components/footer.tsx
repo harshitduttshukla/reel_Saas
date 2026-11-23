@@ -18,6 +18,8 @@ export function Footer() {
         <p>© {new Date().getFullYear()} {SITE_NAME}. Not affiliated with Instagram or Meta.</p>
         <nav aria-label="Footer" className="flex gap-4">
           <Link href="/#how-to" className="hover:text-slate-900">How to</Link>
+          <Link href="/blog" className="hover:text-slate-900">Blog</Link>
+          <Link href="/hi" className="hover:text-slate-900">हिंदी</Link>
           <Link href="/#faq" className="hover:text-slate-900">FAQ</Link>
           <Link href="/privacy" className="hover:text-slate-900">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-slate-900">Terms of Service</Link>

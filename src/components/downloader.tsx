@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, type ClipboardEvent, type FormEvent } from "react";
 import { AlertCircle, ClipboardPaste, Download, Loader2, X } from "lucide-react";
 import { parseReelUrl } from "@/lib/instagram-url";
 import { ERROR_MESSAGES } from "@/lib/errors";
@@ -16,18 +16,36 @@ export function Downloader() {
 
   async function handlePaste() {
     try {
-      const text = await navigator.clipboard.readText();
-      if (text) setUrl(text.trim());
+      const text = (await navigator.clipboard.readText()).trim();
       setError(null);
+      if (text) {
+        setUrl(text);
+        void submit(text);
+      }
     } catch {
       setError("Clipboard access was blocked. Long-press or press Ctrl/⌘+V to paste.");
     }
   }
 
-  async function handleSubmit(e: FormEvent) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
+    void submit(url);
+  }
+
+  /** Auto-submit when a valid Reel link is pasted into the input. */
+  function handleInputPaste(e: ClipboardEvent<HTMLInputElement>) {
+    const text = e.clipboardData.getData("text").trim();
+    if (parseReelUrl(text).ok) {
+      e.preventDefault();
+      setUrl(text);
+      void submit(text);
+    }
+  }
+
+  async function submit(value: string) {
+    if (loading) return;
     setResult(null);
-    const parsed = parseReelUrl(url);
+    const parsed = parseReelUrl(value);
     if (!parsed.ok) return setError(ERROR_MESSAGES[parsed.reason]);
 
     setError(null);
@@ -53,6 +71,7 @@ export function Downloader() {
               maxLength={500}
               value={url}
               onChange={(e) => setUrl(e.target.value)}
+              onPaste={handleInputPaste}
               placeholder="Paste Instagram Reel URL here"
               aria-invalid={Boolean(error)}
               aria-describedby={error ? "reel-error" : undefined}

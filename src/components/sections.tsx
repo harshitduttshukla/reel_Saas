@@ -44,7 +44,8 @@ const FEATURES = [
   { icon: Lock, title: "No sign-up", text: "No account, no login, no app to install." },
   { icon: EyeOff, title: "Privacy first", text: "No database. Your links and downloads are never stored." },
   { icon: ShieldCheck, title: "Safe by design", text: "Strict link validation and server-side checks on every request." },
-  { icon: Ban, title: "Honest results", text: "No fake previews or links. If a Reel can't be retrieved, we tell you why." },
+  { icon: Ban, title: "No watermark added", text: "You get the Reel exactly as Instagram serves it, in original quality, with audio." },
+  { icon: Download, title: "Auto download on paste", text: "Paste a Reel link and the check starts instantly. No extra clicks." },
 ];
 
 export function FeaturesSection() {
