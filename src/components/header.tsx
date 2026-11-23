@@ -7,7 +7,7 @@ const NAV = [
   { href: "/#how-to", label: "How to Download" },
   { href: "/blog", label: "Blog" },
   { href: "/#faq", label: "FAQ" },
-  { href: "/hi", label: "हिंदी" },
+  { href: "/hi", label: "Hindi" },
 ];
 
 export function Header() {

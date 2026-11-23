@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Downloader } from "@/components/downloader";
 import { AboutSection, FaqSection, FeaturesSection, GuidesSection, HowToSection, PrivacySection } from "@/components/sections";
 import { JsonLd } from "@/components/json-ld";
@@ -32,6 +33,10 @@ export default function HomePage() {
           Download Instagram Reels videos quickly and easily. Paste a public Reel link below to get started.
         </p>
         <Downloader />
+        <p className="mt-5 text-sm text-slate-500">
+          हिंदी में पढ़ें:{" "}
+          <Link href="/hi" className="font-medium text-brand-600 hover:underline">Instagram Reel Download Kaise Kare?</Link>
+        </p>
       </section>
       <HowToSection />
       <GuidesSection />
