@@ -5,9 +5,9 @@ import { JsonLd, breadcrumbLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/site";
 import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 
-const TITLE = "Instagram Reel Download Kaise Kare? Free Reel Downloader (2026)";
+const TITLE = "Instagram Reels Download Kaise Kare? 3 Aasan Tarike (Gallery me Save)";
 const DESC =
-  "Instagram reel download kaise kare – link copy karo, yahan paste karo aur reel video gallery me save karo. Free, bina app, bina login, bina watermark. इंस्टाग्राम रील डाउनलोड करें।";
+  "Instagram reels download kaise kare / karen – 3 aasan tarike. Link copy karo, yahan paste karo aur reel video gallery me save karo. Free, bina app, bina login, bina watermark. इंस्टाग्राम रील डाउनलोड करें।";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -21,6 +21,13 @@ export const metadata: Metadata = {
     "instagram video download kaise kare",
     "reel gallery me kaise save kare",
     "इंस्टाग्राम रील डाउनलोड",
+    "instagram reels download kaise karen",
+    "instagram reels video download kaise kare",
+    "instagram se reels kaise download kare",
+    "insta ki reel kaise download kare",
+    "instagram reels download kaise kare gallery me",
+    "how to download instagram reels in hindi",
+    "इंस्टाग्राम रील्स डाउनलोड कैसे करें",
   ],
   alternates: { canonical: "/hi", languages: { en: "/", hi: "/hi", "x-default": "/" } },
   openGraph: { title: TITLE, description: DESC, url: "/hi", locale: "hi_IN" },
@@ -31,6 +38,27 @@ const STEPS = [
   { t: "Link yahan paste karein", d: "Upar diye box me link paste karein. Paste karte hi reel automatic check hone lagegi." },
   { t: "Preview dekhein", d: "Kuch hi second me reel ka preview aa jayega." },
   { t: "Download Video dabayein", d: "“Download Video” par tap karein – reel MP4 me aapke phone ya computer me save ho jayegi." },
+];
+
+/** Paste your YouTube video ID here (e.g. "dQw4w9WgXcQ") once the tutorial is live. */
+const YT_VIDEO_ID = "";
+
+const METHODS = [
+  {
+    h: "तरीका 1: Instagram app से सीधे डाउनलोड करें",
+    steps: ["Instagram खोलें और मनचाही Reel चुनें।", "नीचे दिए गए Share (✈️) आइकन पर टैप करें।", "अगर विकल्प उपलब्ध हो, तो Download पर टैप करें। वीडियो आपकी गैलरी में सेव हो जाएगा।"],
+    note: "Kami: yeh option sirf kuch public reels par aata hai, aur video par Instagram ka logo + username (watermark) lag jata hai. Copyright music wali reels me kai baar audio hat jata hai.",
+  },
+  {
+    h: "तरीका 2: ReelSave website से (बिना ऐप, बिना वॉटरमार्क)",
+    steps: ["Reel पर Share (✈️) › “Copy link” दबाएँ।", "ऊपर दिए बॉक्स में लिंक पेस्ट करें।", "“Download Video” दबाएँ – रील MP4 में गैलरी में सेव हो जाएगी।"],
+    note: "Fayda: har public reel par chalta hai, original quality, poora music/audio, koi watermark nahi, koi app ya login nahi.",
+  },
+  {
+    h: "तरीका 3: Screen recording से",
+    steps: ["Phone ka Screen Recorder on karein (Android: Quick Settings, iPhone: Control Center).", "Reel ko shuru se aakhir tak chalayein.", "Recording band karein – video Gallery me aa jayega."],
+    note: "Kami: quality kam hoti hai, notification/buttons bhi record hote hain aur kai phones me awaaz record nahi hoti. Isliye Tarika 2 sabse behtar hai.",
+  },
 ];
 
 const SECTIONS: { h: string; p: string[] }[] = [
@@ -80,6 +108,8 @@ const FAQS = [
   { q: "Private account ki reel download ho sakti hai?", a: "Nahi. Sirf public reels download hoti hain. Private reels ko kabhi access nahi kiya jata." },
   { q: "Download ki hui reel kahan milegi?", a: "Android me Downloads folder aur Gallery me. iPhone me Files › Downloads me – wahan se Share › Save Video karke Photos me rakhein." },
   { q: "Reel download nahi ho rahi, kya karein?", a: "Check karein ki link me /reel/ ho, account public ho aur reel delete na hui ho. Internet badal kar (WiFi / mobile data) dobara try karein." },
+  { q: "Instagram reels download kaise karen bina app ke?", a: "Reel ka link copy karein, ReelSave me paste karein aur Download Video dabayein. Kisi app ki zarurat nahi – browser hi kaafi hai." },
+  { q: "Instagram me download button kyun nahi dikh raha?", a: "Instagram ka Download option sirf tab aata hai jab creator ne downloads allow kiye hon aur account public ho. Na dikhe to ReelSave se link paste karke download karein." },
   { q: "Kya download ki hui reel dobara upload kar sakte hain?", a: "Sirf apni reels ya creator ki permission se. Hamesha creator ko credit dein." },
 ];
 
@@ -90,6 +120,7 @@ export default function HindiPage() {
         data={[
           breadcrumbLd([{ name: "Home", url: SITE_URL }, { name: "Reel Download Kaise Kare", url: `${SITE_URL}/hi` }]),
           { "@type": "HowTo", name: "Instagram Reel Download Kaise Kare", inLanguage: "hi", step: STEPS.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.t, text: s.d })) },
+          ...(YT_VIDEO_ID ? [{ "@type": "VideoObject", name: "Instagram Reels Download Kaise Kare", description: DESC, inLanguage: "hi", thumbnailUrl: `https://i.ytimg.com/vi/${YT_VIDEO_ID}/hqdefault.jpg`, embedUrl: `https://www.youtube.com/embed/${YT_VIDEO_ID}`, contentUrl: `https://www.youtube.com/watch?v=${YT_VIDEO_ID}`, uploadDate: "2026-11-23" }] : []),
           { "@type": "FAQPage", inLanguage: "hi", mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
         ]}
       />
@@ -116,6 +147,27 @@ export default function HindiPage() {
             ))}
           </ol>
         </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-slate-900">Instagram Reels download karne ke 3 tarike</h2>
+          <p className="mt-2">इंस्टाग्राम रील्स डाउनलोड कैसे करें – teeno tarike, unke fayde aur kamiyan:</p>
+          {METHODS.map((m) => (
+            <div key={m.h} className="mt-6 rounded-2xl bg-white p-5 ring-1 ring-slate-200">
+              <h3 className="text-xl font-bold text-slate-900">{m.h}</h3>
+              <ol className="mt-3 list-decimal space-y-1 pl-6">{m.steps.map((t) => <li key={t}>{t}</li>)}</ol>
+              <p className="mt-3 text-sm text-slate-600">{m.note}</p>
+            </div>
+          ))}
+        </section>
+
+        {YT_VIDEO_ID && (
+          <section>
+            <h2 className="text-2xl font-bold text-slate-900">Video dekhkar seekhein</h2>
+            <div className="mt-4 aspect-video overflow-hidden rounded-2xl ring-1 ring-slate-200">
+              <iframe className="size-full" src={`https://www.youtube-nocookie.com/embed/${YT_VIDEO_ID}`} title="Instagram Reels Download Kaise Kare" loading="lazy" allowFullScreen />
+            </div>
+          </section>
+        )}
 
         <section>
           <h2 className="text-2xl font-bold text-slate-900">Puri guides padhein</h2>

@@ -116,6 +116,32 @@ export const HINGLISH_GUIDES: HinglishGuide[] = [
     ],
     enPath: "/blog/download-instagram-reels-without-watermark",
   },
+  {
+    slug: "instagram-se-video-kaise-download-kare",
+    short: "Instagram se video download",
+    title: "Instagram se Video Kaise Download Kare? (Reels Video Gallery me)",
+    metaTitle: "Instagram se Video Kaise Download Kare? Reels Video Download (Bina App)",
+    description: "Instagram se video / reels video kaise download kare – link copy karo, ReelSave me paste karo aur video gallery me save karo. Free, bina app, bina login, music ke sath.",
+    keywords: ["instagram se video kaise download kare", "instagram video download kaise kare", "insta ka video kaise download kare", "instagram reels video download kaise kare", "instagram me se video kaise download kare", "instagram reels ki video save kaise kare", "इंस्टाग्राम से वीडियो कैसे डाउनलोड करें"],
+    intro: "Instagram par aaj lagbhag har video Reel ke roop me hi post hota hai. Isliye “Instagram se video kaise download kare” ka sabse aasan jawab hai – video ka link copy karo aur ReelSave me paste karo. Video poore music aur awaaz ke sath seedha aapki gallery me save ho jayega.",
+    steps: [
+      { t: "Video ka link copy karein", d: "Instagram me video/reel kholein, Share (✈️) icon dabayein aur “Copy link” chunein." },
+      { t: "ReelSave kholein", d: "Chrome ya Safari me ReelSave kholein aur link box me paste karein." },
+      { t: "Download Video dabayein", d: "Preview aane ke baad “Download Video” dabayein – video MP4 me download ho jayega." },
+      { t: "Gallery me dekhein", d: "Android me Gallery / Google Photos me milega. iPhone me Files › Downloads se Share › “Save Video” karein." },
+    ],
+    sections: [
+      { h: "Kaun se Instagram video download hote hain?", p: ["ReelSave public Reels download karta hai – jinke link me /reel/ hota hai. Agar link me /p/ (photo/carousel post) ya /stories/ hai to woh abhi support nahi hai. Private account ke video kabhi download nahi hote."] },
+      { h: "Instagram ki puri video gallery me kaise download kare?", p: ["ReelSave poori reel – shuru se aakhir tak – ek MP4 file me deta hai. Screen recording ki tarah beech me kuch kat-ta nahi aur quality bhi original rehti hai."] },
+      { h: "Bina kisi app ke video kaise download kare?", p: ["ReelSave ek website hai – Play Store / App Store se kuch install nahi karna. Chrome menu › “Add to Home screen” karke ise app jaisa bhi use kar sakte hain."] },
+    ],
+    faqs: [
+      { q: "Instagram video download karne ke liye login karna padega?", a: "Nahi, sirf video ka link chahiye. Hum kabhi Instagram password nahi maangte." },
+      { q: "Kya video music ke sath download hoga?", a: "Haan, original audio aur gaane ke sath." },
+      { q: "Kya photo post download ho sakti hai?", a: "Abhi ReelSave sirf Reels video support karta hai." },
+    ],
+    enPath: "/",
+  },
 ];
 
 export const getHinglishGuide = (slug: string) => HINGLISH_GUIDES.find((g) => g.slug === slug);
