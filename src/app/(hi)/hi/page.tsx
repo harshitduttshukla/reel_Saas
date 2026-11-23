@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Downloader } from "@/components/downloader";
 import { JsonLd, breadcrumbLd } from "@/components/json-ld";
+import { HOME_LANGUAGES } from "@/lib/locales";
 import { SITE_URL } from "@/lib/site";
 import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     "how to download instagram reels in hindi",
     "इंस्टाग्राम रील्स डाउनलोड कैसे करें",
   ],
-  alternates: { canonical: "/hi", languages: { en: "/", hi: "/hi", "x-default": "/" } },
+  alternates: { canonical: "/hi", languages: HOME_LANGUAGES },
   openGraph: { title: TITLE, description: DESC, url: "/hi", locale: "hi_IN" },
 };
 
@@ -132,11 +133,11 @@ export default function HindiPage() {
         <p className="mx-auto mt-4 mb-8 max-w-xl text-slate-600 sm:text-lg">
           Reel ka link neeche paste karein aur video seedha apni gallery me save karein. Bina app, bina login, bina watermark.
         </p>
-        <Downloader />
+        <Downloader lang="hi" />
       </section>
 
       <div className="mx-auto max-w-3xl space-y-12 px-4 pb-16 text-slate-700">
-        <section>
+        <section id="how-to" className="scroll-mt-20">
           <h2 className="text-2xl font-bold text-slate-900">Instagram reel download karne ke 4 aasan steps</h2>
           <ol className="mt-5 space-y-3">
             {STEPS.map((s, i) => (
@@ -198,7 +199,7 @@ export default function HindiPage() {
           </ul>
         </section>
 
-        <section>
+        <section id="faq" className="scroll-mt-20">
           <h2 className="text-2xl font-bold text-slate-900">Aksar puche jane wale sawal (FAQ)</h2>
           {FAQS.map((f) => (
             <div key={f.q} className="mt-5"><h3 className="font-semibold text-slate-900">{f.q}</h3><p className="mt-1">{f.a}</p></div>

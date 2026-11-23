@@ -6,6 +6,8 @@ import { Downloader } from "@/components/downloader";
 import { JsonLd, breadcrumbLd } from "@/components/json-ld";
 import { HINGLISH_GUIDES, getHinglishGuide } from "@/lib/hinglish-guides";
 import { SITE_URL } from "@/lib/site";
+import { GUIDES } from "@/lib/guides";
+import { POSTS } from "@/lib/blog";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => HINGLISH_GUIDES.map((g) => ({ slug: g.slug }));
@@ -51,7 +53,7 @@ export default async function HinglishGuidePage({ params }: Props) {
         <p className="mt-4 text-lg text-slate-700">{g.intro}</p>
       </div>
 
-      <div className="my-10"><Downloader /></div>
+      <div className="my-10"><Downloader lang="hi" /></div>
 
       <div className="mx-auto max-w-3xl space-y-12 text-slate-700">
         <section>
@@ -82,6 +84,9 @@ export default async function HinglishGuidePage({ params }: Props) {
           <ul className="mt-3 space-y-2">
             <li><Link href="/hi" className="text-brand-600 hover:underline">Instagram Reel Download Kaise Kare?</Link></li>
             {others.map((o) => <li key={o.slug}><Link href={`/hi/${o.slug}`} className="text-brand-600 hover:underline">{o.title}</Link></li>)}
+            {GUIDES.map((e) => <li key={e.slug}><Link href={`/${e.slug}`} className="text-brand-600 hover:underline">{e.title}</Link></li>)}
+            {POSTS.map((b) => <li key={b.slug}><Link href={`/blog/${b.slug}`} className="text-brand-600 hover:underline">{b.title}</Link></li>)}
+            <li><Link href="/" className="text-brand-600 hover:underline">Instagram Reels Downloader</Link></li>
           </ul>
         </aside>
       </div>

@@ -6,6 +6,7 @@ import { Downloader } from "@/components/downloader";
 import { JsonLd, breadcrumbLd } from "@/components/json-ld";
 import { POSTS, getPost } from "@/lib/blog";
 import { GUIDES } from "@/lib/guides";
+import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -98,6 +99,8 @@ export default async function BlogPostPage({ params }: Props) {
           <ul className="mt-3 space-y-2">
             {related.map((p) => <li key={p.slug}><Link href={`/blog/${p.slug}`} className="text-brand-600 hover:underline">{p.title}</Link></li>)}
             {GUIDES.map((g) => <li key={g.slug}><Link href={`/${g.slug}`} className="text-brand-600 hover:underline">{g.title}</Link></li>)}
+            {HINGLISH_GUIDES.map((h) => <li key={h.slug}><Link href={`/hi/${h.slug}`} className="text-brand-600 hover:underline">{h.title}</Link></li>)}
+            <li><Link href="/" className="text-brand-600 hover:underline">Instagram Reels Downloader</Link></li>
           </ul>
         </aside>
       </div>

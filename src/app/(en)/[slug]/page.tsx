@@ -5,6 +5,7 @@ import { ChevronRight, Lightbulb } from "lucide-react";
 import { Downloader } from "@/components/downloader";
 import { JsonLd, breadcrumbLd } from "@/components/json-ld";
 import { GUIDES, getGuide } from "@/lib/guides";
+import { POSTS } from "@/lib/blog";
 import { SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -85,6 +86,10 @@ export default async function GuidePage({ params }: Props) {
             {others.map((g) => (
               <li key={g.slug}><Link href={`/${g.slug}`} className="text-brand-600 hover:underline">{g.title}</Link></li>
             ))}
+            {POSTS.map((p) => (
+              <li key={p.slug}><Link href={`/blog/${p.slug}`} className="text-brand-600 hover:underline">{p.title}</Link></li>
+            ))}
+            <li><Link href="/hi" className="text-brand-600 hover:underline">Instagram Reel Download Kaise Kare (Hindi)</Link></li>
             <li><Link href="/" className="text-brand-600 hover:underline">Instagram Reels Downloader</Link></li>
           </ul>
         </aside>

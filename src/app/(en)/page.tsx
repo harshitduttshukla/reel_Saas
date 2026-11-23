@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Downloader } from "@/components/downloader";
 import { AboutSection, FaqSection, FeaturesSection, GuidesSection, HowToSection, PrivacySection } from "@/components/sections";
+import { HOME_LANGUAGES } from "@/lib/locales";
 import { JsonLd } from "@/components/json-ld";
 import { FAQS, HOW_TO_STEPS } from "@/lib/content";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
@@ -9,7 +10,7 @@ import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: SITE_TITLE },
   description: SITE_DESCRIPTION,
-  alternates: { canonical: "/", languages: { en: "/", hi: "/hi", "x-default": "/" } },
+  alternates: { canonical: "/", languages: HOME_LANGUAGES },
 };
 
 const jsonLd = [

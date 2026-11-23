@@ -23,13 +23,13 @@ export const rootMetadata: Metadata = {
 export const rootViewport: Viewport = { themeColor: "#e1306c", width: "device-width", initialScale: 1 };
 
 /** Shared <html>/<body> shell; each route group's root layout sets its own lang. */
-export function RootShell({ lang, children }: { lang: "en" | "hi"; children: React.ReactNode }) {
+export function RootShell({ lang, children }: { lang: string; children: React.ReactNode }) {
   return (
     <html lang={lang}>
       <body className="min-h-screen flex flex-col antialiased font-sans">
-        <Header />
+        <Header lang={lang} />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

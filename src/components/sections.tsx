@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Apple, Laptop, Smartphone } from "lucide-react";
 import { FAQS, HOW_TO_STEPS } from "@/lib/content";
 import { GUIDES } from "@/lib/guides";
+import { POSTS } from "@/lib/blog";
 
 const STEP_ICONS = [ClipboardCopy, Link2, MousePointerClick, Download];
 
@@ -124,6 +125,11 @@ export function GuidesSection() {
           );
         })}
       </div>
+      <ul className="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-5 gap-y-2 text-sm">
+        {POSTS.map((p) => (
+          <li key={p.slug}><Link href={`/blog/${p.slug}`} className="text-brand-600 hover:underline">{p.title}</Link></li>
+        ))}
+      </ul>
     </section>
   );
 }

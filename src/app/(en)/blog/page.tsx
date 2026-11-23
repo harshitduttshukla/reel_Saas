@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd, breadcrumbLd } from "@/components/json-ld";
 import { POSTS } from "@/lib/blog";
+import { GUIDES } from "@/lib/guides";
+import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -25,6 +27,15 @@ export default function BlogIndex() {
           </Link>
         ))}
       </div>
+      <aside className="mt-12 rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+        <h2 className="font-semibold text-slate-900">Device guides</h2>
+        <ul className="mt-3 space-y-2">
+          {GUIDES.map((g) => <li key={g.slug}><Link href={`/${g.slug}`} className="text-brand-600 hover:underline">{g.title}</Link></li>)}
+          <li><Link href="/hi" className="text-brand-600 hover:underline">Instagram Reel Download Kaise Kare?</Link></li>
+          {HINGLISH_GUIDES.map((h) => <li key={h.slug}><Link href={`/hi/${h.slug}`} className="text-brand-600 hover:underline">{h.title}</Link></li>)}
+          <li><Link href="/" className="text-brand-600 hover:underline">Instagram Reels Downloader</Link></li>
+        </ul>
+      </aside>
     </div>
   );
 }
