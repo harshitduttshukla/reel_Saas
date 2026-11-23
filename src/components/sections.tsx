@@ -1,5 +1,8 @@
 import { ClipboardCopy, Link2, MonitorSmartphone, MousePointerClick, ShieldCheck, Zap, Lock, Download, EyeOff, Ban } from "lucide-react";
+import Link from "next/link";
+import { Apple, Laptop, Smartphone } from "lucide-react";
 import { FAQS, HOW_TO_STEPS } from "@/lib/content";
+import { GUIDES } from "@/lib/guides";
 
 const STEP_ICONS = [ClipboardCopy, Link2, MousePointerClick, Download];
 
@@ -98,6 +101,58 @@ export function PrivacySection() {
           <li key={t} className="flex items-start gap-2 rounded-xl bg-slate-50 p-4"><ShieldCheck className="size-4 shrink-0 text-emerald-600 mt-0.5" aria-hidden />{t}</li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+const GUIDE_ICONS = [Apple, Smartphone, Laptop];
+
+export function GuidesSection() {
+  return (
+    <section id="guides" aria-labelledby="guides-title" className="scroll-mt-20 px-4 pb-16">
+      <SectionHeading id="guides-title" title="Download Reels on Any Device" subtitle="Detailed guides for iPhone, Android and computers." />
+      <div className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-3">
+        {GUIDES.map((g, i) => {
+          const Icon = GUIDE_ICONS[i] ?? Smartphone;
+          return (
+            <Link key={g.slug} href={`/${g.slug}`} className="group rounded-2xl bg-white p-6 ring-1 ring-slate-200 transition hover:ring-brand-500">
+              <Icon className="size-6 text-brand-500" aria-hidden />
+              <h3 className="mt-3 font-semibold group-hover:text-brand-600">{g.title}</h3>
+              <p className="mt-1.5 text-sm text-slate-600">{g.description}</p>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+export function AboutSection() {
+  return (
+    <section id="about" aria-labelledby="about-title" className="scroll-mt-20 bg-white px-4 py-16">
+      <div className="mx-auto max-w-3xl space-y-4 text-slate-700">
+        <h2 id="about-title" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Free Instagram Reels Downloader Online</h2>
+        <p>
+          ReelSave is a free online Instagram Reels downloader. It saves a public Reel as an MP4 video file in its original
+          quality, straight from your browser. There is no app to install, no account to create and no browser extension to add.
+        </p>
+        <h3 className="pt-2 text-lg font-semibold text-slate-900">Save Reels in original quality</h3>
+        <p>
+          We deliver the same video file Instagram serves, so the resolution and audio are not re-compressed. The download
+          is a standard MP4 that plays on phones, computers, smart TVs and in video editors.
+        </p>
+        <h3 className="pt-2 text-lg font-semibold text-slate-900">Built for Reels links</h3>
+        <p>
+          Paste any link that contains <code className="rounded bg-slate-100 px-1">instagram.com/reel/</code> or{" "}
+          <code className="rounded bg-slate-100 px-1">instagram.com/reels/</code>, including links copied from the
+          Instagram app share sheet with tracking parameters. ReelSave cleans the link and fetches only the Reel itself.
+        </p>
+        <h3 className="pt-2 text-lg font-semibold text-slate-900">Use downloads responsibly</h3>
+        <p>
+          Save Reels you created, or ones you have the creator&apos;s permission to keep. Always credit creators and respect
+          copyright when you share content again.
+        </p>
+      </div>
     </section>
   );
 }
