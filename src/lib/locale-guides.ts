@@ -18,7 +18,7 @@ const g = (lang: string, topic: Topic, slug: string, rest: Omit<LocaleGuide, "la
 export const LOCALE_GUIDES: LocaleGuide[] = [
   // ───────── Español ─────────
   g("es", "iphone", "descargar-reels-instagram-iphone", {
-    title: "Cómo Descargar Reels de Instagram en iPhone (Guardar en Fotos)",
+    title: "Cómo Descargar Reels de Instagram en iPhone",
     description: "Guía paso a paso para descargar Reels de Instagram en iPhone y guardarlos en la app Fotos, gratis, con audio y sin app.",
     keywords: ["descargar reels iphone", "guardar reels en iphone", "descargar videos de instagram iphone", "como guardar reels en la galeria iphone"],
     intro: "En iPhone no hace falta instalar ninguna app: Safari descarga el Reel y luego lo pasas a Fotos con dos toques.",
@@ -34,7 +34,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("es", "android", "descargar-reels-instagram-android", {
-    title: "Cómo Descargar Reels de Instagram en Android (Guardar en Galería)",
+    title: "Cómo Descargar Reels de Instagram en Android",
     description: "Descarga Reels de Instagram en Android y guárdalos en la Galería en segundos. Gratis, en HD y sin instalar apps.",
     keywords: ["descargar reels android", "guardar reels en galeria", "descargar videos de instagram android", "descargar reels en el celular"],
     intro: "En Android el Reel se descarga directamente con Chrome y aparece solo en la Galería o en Google Fotos.",
@@ -50,7 +50,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("es", "watermark", "descargar-reels-sin-marca-de-agua", {
-    title: "Descargar Reels de Instagram Sin Marca de Agua (Calidad Original)",
+    title: "Descargar Reels de Instagram Sin Marca de Agua",
     description: "Cómo descargar Reels de Instagram sin marca de agua ni logo, en calidad original y con audio. Gratis y sin app.",
     keywords: ["descargar reels sin marca de agua", "reels sin marca de agua", "descargar reels sin logo", "quitar marca de agua reels"],
     intro: "La opción «Descargar» de Instagram añade su logo y el @usuario sobre el vídeo. Con ReelSave obtienes el archivo original, limpio.",
@@ -100,7 +100,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("de", "watermark", "instagram-reels-ohne-wasserzeichen", {
-    title: "Instagram Reels Ohne Wasserzeichen Herunterladen (Originalqualität)",
+    title: "Instagram Reels Ohne Wasserzeichen Herunterladen",
     description: "Instagram Reels ohne Wasserzeichen und Logo herunterladen – in Originalqualität mit Ton. Kostenlos und ohne App.",
     keywords: ["instagram reels ohne wasserzeichen", "reels ohne wasserzeichen herunterladen", "instagram video ohne logo", "wasserzeichen entfernen reels"],
     intro: "Der eingebaute Download von Instagram blendet Logo und @Benutzernamen ein. ReelSave liefert dir die saubere Originaldatei.",
@@ -168,7 +168,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
 
   // ───────── Français ─────────
   g("fr", "iphone", "telecharger-reels-instagram-iphone", {
-    title: "Télécharger un Reel Instagram sur iPhone (Enregistrer dans Photos)",
+    title: "Télécharger un Reel Instagram sur iPhone",
     description: "Comment télécharger les Reels Instagram sur iPhone et les enregistrer dans Photos – gratuit, avec le son, sans appli.",
     keywords: ["télécharger reel instagram iphone", "enregistrer reel iphone", "télécharger vidéo instagram iphone", "reel dans la pellicule iphone"],
     intro: "Sur iPhone, aucune appli n’est nécessaire : Safari télécharge le Reel, puis deux touches suffisent pour l’envoyer dans Photos.",
@@ -200,7 +200,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("fr", "watermark", "telecharger-reels-sans-filigrane", {
-    title: "Télécharger des Reels Instagram Sans Filigrane (Qualité d’Origine)",
+    title: "Télécharger des Reels Instagram Sans Filigrane",
     description: "Téléchargez les Reels Instagram sans filigrane ni logo, en qualité d’origine avec le son. Gratuit, sans appli.",
     keywords: ["télécharger reels sans filigrane", "reel instagram sans logo", "enlever filigrane reel", "reels sans watermark"],
     intro: "Le bouton « Télécharger » d’Instagram ajoute le logo et le @pseudo. ReelSave vous donne le fichier original, propre.",
@@ -234,7 +234,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("pt", "android", "baixar-reels-instagram-android", {
-    title: "Como Baixar Reels do Instagram no Android (Salvar na Galeria)",
+    title: "Como Baixar Reels do Instagram no Android",
     description: "Baixe Reels do Instagram no Android e salve na Galeria em segundos. Grátis, em HD e sem instalar app.",
     keywords: ["baixar reels android", "salvar reels na galeria", "baixar vídeo do instagram no celular", "baixar reels no celular"],
     intro: "No Android o Chrome baixa o Reel direto, e ele aparece na Galeria ou no Google Fotos.",
@@ -250,7 +250,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("pt", "watermark", "baixar-reels-sem-marca-dagua", {
-    title: "Baixar Reels do Instagram Sem Marca d'Água (Qualidade Original)",
+    title: "Baixar Reels do Instagram Sem Marca d'Água",
     description: "Como baixar Reels do Instagram sem marca d'água nem logo, em qualidade original e com áudio. Grátis e sem app.",
     keywords: ["baixar reels sem marca d'água", "reels sem marca d'água", "baixar reels sem logo", "tirar marca d'água reels"],
     intro: "O “Baixar” do próprio Instagram coloca o logo e o @usuário no vídeo. Com o ReelSave você recebe o arquivo original, limpo.",
@@ -350,7 +350,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("it", "watermark", "scaricare-reel-senza-filigrana", {
-    title: "Scaricare Reel di Instagram Senza Filigrana (Qualità Originale)",
+    title: "Scaricare Reel di Instagram Senza Filigrana",
     description: "Come scaricare i Reel di Instagram senza filigrana né logo, in qualità originale con audio. Gratis e senza app.",
     keywords: ["scaricare reel senza filigrana", "reel senza logo", "togliere filigrana reel", "reel instagram senza watermark"],
     intro: "Il download integrato di Instagram aggiunge logo e @nomeutente. ReelSave ti dà il file originale, pulito.",
@@ -400,7 +400,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("nl", "watermark", "instagram-reels-downloaden-zonder-watermerk", {
-    title: "Instagram Reels Downloaden Zonder Watermerk (Originele Kwaliteit)",
+    title: "Instagram Reels Downloaden Zonder Watermerk",
     description: "Download Instagram Reels zonder watermerk of logo, in originele kwaliteit met geluid. Gratis en zonder app.",
     keywords: ["instagram reels downloaden zonder watermerk", "reels zonder watermerk", "watermerk verwijderen reels", "reels zonder logo"],
     intro: "De ingebouwde download van Instagram zet er het logo en de @gebruikersnaam op. ReelSave geeft je het originele, schone bestand.",
@@ -450,7 +450,7 @@ export const LOCALE_GUIDES: LocaleGuide[] = [
     ],
   }),
   g("pl", "watermark", "pobierz-rolki-bez-znaku-wodnego", {
-    title: "Pobierz Rolki z Instagrama Bez Znaku Wodnego (Oryginalna Jakość)",
+    title: "Pobierz Rolki z Instagrama Bez Znaku Wodnego",
     description: "Jak pobrać rolki z Instagrama bez znaku wodnego i logo, w oryginalnej jakości z dźwiękiem. Za darmo, bez aplikacji.",
     keywords: ["pobierz rolki bez znaku wodnego", "rolki bez logo", "usunąć znak wodny rolki", "instagram reels bez znaku wodnego"],
     intro: "Wbudowane pobieranie Instagrama dodaje logo i @nazwę. ReelSave daje czysty, oryginalny plik.",

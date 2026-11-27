@@ -6,9 +6,9 @@ import { HOME_LANGUAGES } from "@/lib/locales";
 import { SITE_URL } from "@/lib/site";
 import { HINGLISH_GUIDES } from "@/lib/hinglish-guides";
 
-const TITLE = "Instagram Reels Download Kaise Kare? 3 Aasan Tarike (Gallery me Save)";
+const TITLE = "Instagram Reels Download Kaise Kare? 3 Aasan Tarike";
 const DESC =
-  "Instagram reels download kaise kare / karen – 3 aasan tarike. Link copy karo, yahan paste karo aur reel video gallery me save karo. Free, bina app, bina login, bina watermark. इंस्टाग्राम रील डाउनलोड करें।";
+  "Instagram reels download kaise kare – 3 aasan tarike. Link copy karo, paste karo aur reel gallery me save karo. Free, bina app, bina login, bina watermark.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

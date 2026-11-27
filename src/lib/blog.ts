@@ -22,7 +22,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "download-instagram-reels-without-watermark",
     title: "How to Download Instagram Reels Without Watermark (2026 Guide)",
-    metaTitle: "Download Instagram Reels Without Watermark – Free & HD",
+    metaTitle: "Download Instagram Reels Without Watermark",
     description: "Instagram's built-in download adds a watermark. Here's how to save Reels as a clean MP4 without a watermark, in original quality, on any device.",
     published: "2026-11-23",
     updated: "2026-11-23",
@@ -70,7 +70,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "save-instagram-reels-with-music",
     title: "How to Save Instagram Reels With Music (Audio Included)",
-    metaTitle: "Save Instagram Reels With Music & Audio – Easy Steps",
+    metaTitle: "Save Instagram Reels With Music & Audio",
     description: "Saving a Reel to Instagram's Saved folder doesn't keep it on your phone. Learn how to download Instagram Reels with the music and audio included.",
     published: "2026-11-23",
     updated: "2026-11-23",
@@ -110,7 +110,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "why-cant-i-download-instagram-reels",
     title: "Why Can't I Download an Instagram Reel? 7 Fixes",
-    metaTitle: "Why Can't I Download Instagram Reels? 7 Quick Fixes",
+    metaTitle: "Can't Download Instagram Reels? 7 Quick Fixes",
     description: "Reel download not working? Here are the common reasons (private account, wrong link, deleted Reel, network issues) and how to fix each one.",
     published: "2026-11-23",
     updated: "2026-11-23",
@@ -133,7 +133,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "download-your-own-instagram-reels",
     title: "How to Download Your Own Instagram Reels (Backup Guide)",
-    metaTitle: "Download Your Own Instagram Reels – Backup All Your Videos",
+    metaTitle: "Download & Back Up Your Own Instagram Reels",
     description: "Back up your own Instagram Reels: save drafts before posting, download posted Reels without a watermark, or export all your data from Instagram.",
     published: "2026-11-23",
     updated: "2026-11-23",

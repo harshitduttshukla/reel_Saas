@@ -8,5 +8,5 @@ function normalizeSiteUrl(raw: string | undefined): string {
 }
 
 export const SITE_URL = normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
-export const SITE_TITLE = "Instagram Reels Downloader – Download Reels Videos Free, No Watermark";
+export const SITE_TITLE = "Instagram Reels Downloader – Free, HD, No Watermark";
 export const SITE_DESCRIPTION = "Free Instagram Reels downloader. Paste a Reel link to download Instagram Reels videos in original quality as MP4, with no watermark, no app and no login.";

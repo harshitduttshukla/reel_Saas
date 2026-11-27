@@ -15,7 +15,7 @@ export const GUIDES: Guide[] = [
     slug: "download-instagram-reels-iphone",
     device: "iPhone",
     title: "How to Download Instagram Reels on iPhone",
-    metaTitle: "Download Instagram Reels on iPhone (Save to Photos)",
+    metaTitle: "Download Instagram Reels on iPhone",
     description: "Step-by-step guide to download Instagram Reels on iPhone and iPad with Safari and save the video to your Photos app. No app needed.",
     intro: "You don't need to install an app to save a Reel on your iPhone. ReelSave works right in Safari or Chrome on iOS. Copy the Reel link, paste it here and the MP4 is saved to your Files app, from where you can move it to Photos.",
     steps: [
@@ -40,7 +40,7 @@ export const GUIDES: Guide[] = [
     slug: "download-instagram-reels-android",
     device: "Android",
     title: "How to Download Instagram Reels on Android",
-    metaTitle: "Download Instagram Reels on Android (Save to Gallery)",
+    metaTitle: "Download Instagram Reels on Android",
     description: "Learn how to download Instagram Reels on any Android phone with Chrome and save the MP4 to your Gallery. Free, fast and no app required.",
     intro: "On Android, saving a Reel takes a few seconds in Chrome or any other browser. The video goes to your Downloads folder and shows up in Gallery or Google Photos automatically.",
     steps: [
@@ -65,7 +65,7 @@ export const GUIDES: Guide[] = [
     slug: "download-instagram-reels-pc",
     device: "PC & Mac",
     title: "How to Download Instagram Reels on PC and Mac",
-    metaTitle: "Download Instagram Reels on PC & Mac (Windows, macOS)",
+    metaTitle: "Download Instagram Reels on PC & Mac",
     description: "Download Instagram Reels on Windows PC, Mac or Chromebook using any browser. Copy the Reel URL, paste it into ReelSave and save the MP4.",
     intro: "On a computer, ReelSave works in Chrome, Edge, Safari, Firefox and Brave, with no extension or software to install. The Reel is saved as an MP4 you can play in any video player or edit in any video editor.",
     steps: [

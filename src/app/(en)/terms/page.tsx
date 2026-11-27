@@ -4,7 +4,7 @@ import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: `Terms for using the ${SITE_NAME} Instagram Reels downloader.`,
+  description: `Terms of Service for ${SITE_NAME}, the free Instagram Reels downloader: acceptable use, copyright and your responsibilities.`,
   alternates: { canonical: "/terms" },
 };
 
